@@ -20,7 +20,7 @@ class UsersEditView(generics.RetrieveUpdateAPIView):
     serializer_class = UserSerializer
 
 
-class UsersDeleteView(generics.RetrieveDestroyAPIView):
+class UserDeleteView(generics.DestroyAPIView):
     queryset = SynergyUser.objects.all()
     serializer_class = UserSerializer
 
@@ -40,14 +40,14 @@ class UserGroupEditView(generics.RetrieveUpdateAPIView):
     serializer_class = GroupSerializer
 
 
-class UserGroupDeleteView(generics.RetrieveDestroyAPIView):
+class UserGroupDeleteView(generics.DestroyAPIView):
     queryset = SynergyGroup.objects.all()
     serializer_class = GroupSerializer
 
-    def destroy(self, request, *args, **kwargs):
+    def delete(self, request, *args, **kwargs):
         obj = self.get_object()
-        yusik = SynergyUser.objects.filter(synergy_group_id=kwargs['pk']).first()
-        if yusik:
+        user = SynergyUser.objects.filter(synergy_group_id=kwargs['pk']).first()
+        if user:
             return Response(status=status.HTTP_404_NOT_FOUND)
         else:
             obj.delete()

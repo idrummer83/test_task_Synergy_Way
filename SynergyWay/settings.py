@@ -133,19 +133,8 @@ AUTH_USER_MODEL = 'users_way.SynergyUser'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
-        # 'rest_framework.permissions.IsAuthenticated'
     ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        # 'rest_framework.authentication.TokenAuthentication',
-        # 'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
-    ),
-    # 'DEFAULT_PARSER_CLASSES': (
-        # 'rest_framework_json_api.parsers.JSONParser',
-        # 'rest_framework.parsers.FormParser',
-        # 'rest_framework.parsers.MultiPartParser'
-    # ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (),
 }
 
 CORS_ORIGIN_ALLOW_ALL = True

@@ -16,16 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from users_way.views import UserCreateView, UsersListView, UsersEditView, UsersDeleteView, UserGroupListView, UserGroupCreateView,\
-    UserGroupEditView, UserGroupDeleteView
+from users_way.views import UserCreateView, UsersListView, UsersEditView, UserDeleteView, UserGroupListView, \
+    UserGroupCreateView, UserGroupEditView, UserGroupDeleteView
 
 urlpatterns = [
-    path('api/', include('users_way.urls')),
     path('admin/', admin.site.urls),
     path('user_list/', UsersListView.as_view(), name='users'),
     path('user_create/', UserCreateView.as_view(), name='user_create'),
     path('user_edit/<int:pk>', UsersEditView.as_view(), name='user_edit'),
-    path('user_delete/<int:pk>', UsersDeleteView.as_view(), name='user_delete'),
+    path('user_delete/<int:pk>', UserDeleteView.as_view(), name='user_delete'),
 
     path('group_list/', UserGroupListView.as_view(), name='groups'),
     path('group_create/', UserGroupCreateView.as_view(), name='group_create'),

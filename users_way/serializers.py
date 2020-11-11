@@ -24,7 +24,3 @@ class GroupSerializer(serializers.ModelSerializer):
         fields = (
             'id', 'title', 'description'
         )
-
-
-
-
