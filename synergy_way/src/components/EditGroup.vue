@@ -69,7 +69,6 @@
                         body: JSON.stringify(data)
                     }
                 ).then(response => {
-                    // this.clearForm()
                     this.alert = true
                     return response
                     })
