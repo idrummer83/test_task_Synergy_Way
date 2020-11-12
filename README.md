@@ -1,8 +1,8 @@
-# test_task_Synergy_Way
-django rest API + Vue js
+# Project test task of Synergy_Way
+technologies - django rest API + Vue js
 
 
-Test task
+# Technical task
 Create a simple website with two pages: 1) List of Users 2) List of Groups for Users 
 
 Description of the first page:
@@ -30,3 +30,60 @@ The images above are added for your overall understanding, do make the same is n
 To implement the test task, use Django for the backend and React for the frontend, the rest technologies are up to you.
 The results of your work please push to Bitbucket or GitHub and send us link with access to view and download. 
 You have one week to perform this task. In case of any questions please let me know.  
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+At first clone a project
+
+```
+git clone https://https://github.com/idrummer83/test_task_Synergy_Way
+cd test_task_Synergy_Way
+```
+
+Create and activate virtual enviroment
+
+```
+pip install virtualenv
+source venv/bin/activate
+```
+
+### Prerequisites
+
+You need to install all packages from requirements.txt file
+
+```
+pip install -r requirements.txt
+```
+
+Start project
+
+```
+python manage.py runserver or .manage.py runserver
+App running at: http://127.0.0.1:8000/
+```
+
+# Installing Frontend
+
+```
+cd test_task_Synergy_Way/synergy_way
+npm install
+npm run serve
+App running at: http://192.168.1.7:8080/
+```
+
+
+## Built With
+
+* [Python3](https://www.python.org/download/releases/3.0/)
+* [Django 3](https://maven.apache.org/) - Python framework
+* [Vue](https://vuejs.org/) - Vue javascript framework
+
+## Authors
+
+* **Yuriy Lyashenko** - [idrummer83](https://github.com/idrummer83)
