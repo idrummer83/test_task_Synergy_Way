@@ -79,9 +79,19 @@ App running at: http://192.168.1.7:8080/
 
 # Docker install
 
+Docker and docker-compose must be installed
+
 ```
-docker pull idrummer83/synergy_way_vue:latest
-docker pull idrummer83/test_task_synergy_way_web:latest
+go by link
+https://hub.docker.com/r/idrummer83/synergy_way_vue
+and copy repository -- docker pull idrummer83/synergy_way_vue
+
+
+go by link 
+https://hub.docker.com/r/idrummer83/test_task_synergy_way_web
+and copy repository -- docker pull idrummer83/test_task_synergy_way_web
+
+then run:
 
 docker-compose run test_task_synergy_way_web
 docker-compose run synergy_way_vue
