@@ -77,6 +77,16 @@ npm run serve
 App running at: http://192.168.1.7:8080/
 ```
 
+# Docker install
+
+```
+docker pull idrummer83/synergy_way_vue:latest
+docker pull idrummer83/test_task_synergy_way_web:latest
+
+docker-compose run test_task_synergy_way_web
+docker-compose run synergy_way_vue
+
+```
 
 ## Built With
 
